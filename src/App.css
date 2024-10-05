@@ -14,6 +14,10 @@ body{
 .bg-purpler{
     background-color: #381239;
 }
+.bg-lpurple{
+    background: #684b69;
+
+}
 .headerWrapper .top-strip{
     padding: 4px 8px;
 }
@@ -128,4 +132,37 @@ header .part3 .circle svg{
     color: #fff;
     background-color: orangered;
 
+}
+nav .allCatTab{
+    background: #511653;
+    padding: 8px 20px;
+    padding: 15px 20px;
+    border-radius: 35px;
+    gap: .5rem;
+}
+nav .allCatTab *{
+    color: #fff;
+}
+nav .allCatTab .text{
+    font-weight: 500;
+
+}
+nav .navPart2 ul{
+    margin-bottom: 0;
+}
+nav .navPart2 ul li a{
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    padding: 8px 10px;
+    transition: all 0.2s ease-in-out;
+    border-radius: 20px;
+}
+nav .navPart2 ul li a:hover{
+    background-color: #d3c8d4;
+    color: #381239;
 }
