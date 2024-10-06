@@ -136,7 +136,7 @@ header .part3 .circle svg{
 nav .allCatTab{
     background: #511653;
     padding: 8px 20px;
-    padding: 15px 20px;
+    /* padding: 15px 20px; */
     border-radius: 35px;
     gap: .5rem;
 }
@@ -149,6 +149,40 @@ nav .allCatTab .text{
 }
 nav .navPart2 ul{
     margin-bottom: 0;
+}
+nav .navPart2 ul li{
+    position: relative;
+}
+nav .navPart2 ul li .submenu, .catWrapper .submenu, .catWrapper .subSubMenuWrapper .subSubMenu{
+    position: absolute;
+    top: 150%;
+    left: 0;
+    min-width: 200px;
+    padding: 10px 0px;
+    /* border: 1px solid rgba(0, 0, 0, 0.2); */
+    border-radius: 7px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+    background-color: #fff;
+
+}
+nav .navPart2 ul li:hover .submenu{
+    opacity: 1;
+    visibility: inherit;
+}
+nav .navPart2 ul li button{
+    background: transparent;
+    color: rgba(0, 0, 0, 0.6);
+    padding: 5px 15px; 
+    font-weight: 500;
+}
+nav .navPart2 ul li .submenu a{
+    border-radius: 1px !important;
+    padding: 0;
+}
+nav .navPart2 ul li .submenu a:hover{
+    background-color: #f3f4f7;
 }
 nav .navPart2 ul li a{
     font-size: 16px;
@@ -214,4 +248,36 @@ nav .navPart2 ul li a:hover{
 .locationModal .MuiPaper-elevation .close_:hover{
     color: white;
     background: red;
+}
+.catWrapper{
+    position: relative;
+}
+.catWrapper .submenu{
+    position: absolute;
+    top: 150%;
+    width: 200px;
+    z-index: 9999;
+}
+.catWrapper .submenu button{
+    color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    justify-content: space-between;
+
+}
+.catWrapper:hover .submenu{
+    opacity: 1;
+    visibility: inherit;
+}
+.catWrapper .subSubMenuWrapper{
+    position: relative;
+}
+.catWrapper .subSubMenuWrapper .subSubMenu{
+    position: absolute;
+    left: 100%;
+    top: 0px;
+    
+}
+.catWrapper .subSubMenuWrapper:hover .subSubMenu{
+    opacity: 1;
+    visibility: inherit;
 }
