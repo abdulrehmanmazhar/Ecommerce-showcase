@@ -2,6 +2,7 @@ import React from "react";
 import logo from "../../assets/logo.png";
 
 import Button from "@mui/material/Button";
+
 import { LuUser2 } from "react-icons/lu";
 import { IoBagOutline } from "react-icons/io5";
 import { FaAngleDown } from "react-icons/fa";
@@ -71,7 +72,7 @@ function Header() {
               </div>
               <div className="navPart2 col-sm-9 d-flex align-items-center">
                 <ul className="list list-inline w-100">
-                  <li className="list-inline-item"> <Link to={"/"}>Home</Link> </li>
+                  <li className="list-inline-item"> <Link to={"/"}><Button> Home</Button></Link> </li>
                   <li className="list-inline-item"> <Link to={"/"}>Best Selling</Link> </li>
                   <li className="list-inline-item"> <Link to={"/"}>Premium</Link> </li>
                   <li className="list-inline-item"> <Link to={"/"}>Hot Sales</Link> </li>
@@ -83,6 +84,7 @@ function Header() {
             </div>
           </div>
         </nav>
+        <hr />
       </div>
     </>
   );
