@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css");
+
 *{
     margin: 0;
     padding: 0;
@@ -6,7 +9,7 @@
 body{
     font-family: "Lato", sans-serif;
     font-size: 14px;
-
+    overflow-x: hidden;
 }
 .bg-purple{
     background: #511653;
@@ -165,8 +168,10 @@ nav .navPart2 ul li .submenu, .catWrapper .submenu, .catWrapper .subSubMenuWrapp
     visibility: hidden;
     transition: all 0.3s ease-in-out;
     background-color: #fff;
+    z-index: 999;
 
 }
+
 nav .navPart2 ul li:hover .submenu{
     opacity: 1;
     visibility: inherit;
@@ -280,4 +285,161 @@ nav .navPart2 ul li a:hover{
 .catWrapper .subSubMenuWrapper:hover .subSubMenu{
     opacity: 1;
     visibility: inherit;
+}
+.image, .image img{
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+    user-select: none;
+    border-radius: .5rem;
+    box-sizing: border-box;
+}
+
+.buttons{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 2rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.prev, .next{
+    width: 3rem;
+    height: 3rem;
+    padding: .75rem;
+    cursor: pointer;
+     background-color: white;
+    border-radius: 50%;
+    
+}
+.prev:hover, .next:hover{
+    background-color: gainsboro;
+    /* box-shadow: 0px 0px 10px gray; */
+}
+.carousel{
+    position: relative;
+    top: 0px;
+    /* padding: 0 20px; */
+    /* margin-bottom: 20px; */
+    max-width: 1024px;
+    margin: auto;
+}
+
+.indbtns{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 1rem;
+    width: 100%;
+    gap: 1rem;
+}
+.ind{
+    width: 1rem;
+    height: 1rem;
+    background-color: #381239;
+    border-radius: .5rem;
+}
+#now{
+    width: 2rem;
+    border-radius: .5rem;
+    background-color: white;
+}
+.homeProducts{
+    padding: 25px 0px;
+    width: 100%;
+    max-width: 1024px;
+    margin: auto;
+}
+.cursor{
+    cursor: pointer;
+}
+.banner{
+    width: 100%;
+    border-radius: 7px;
+}
+.homeProducts button{
+    min-width: 3rem;
+    width: 150px;
+    border-radius: 2rem;
+    background-color: #f3f4f7;
+    color: #000;
+    gap: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    text-transform: capitalize;
+}
+.product_row .item{
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-right: 0;
+}
+.product_row .item h4{
+    font-size: 16px;
+    font-weight: 600;
+}
+.product_row .item .info{
+    padding: 1rem;
+}
+.bannerHeading{
+    font-size: 20px;
+    font-weight: 600;
+}
+.item .info .oldPrice{
+    font-size: 18px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.4);
+    text-decoration: line-through;
+}
+.item .info .netPrice{
+    font-size: 18px;
+    font-weight: bold;
+}
+.product_row .item:last-child{
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+.productItem{
+    position: relative;
+}
+.badge{
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    padding: 7px 10px;
+}
+.badge-primary{
+    background-color: #381239;
+}
+.productItem .actions{
+    position: absolute;
+    top: 1rem;
+    right: -100%;
+    width: 40px;
+    transition: all 0.3s ease-in-out;
+}
+.productItem .actions button{
+    min-width: 30px;
+    width: 40px;
+    margin-bottom: .5rem;
+    height: 40px;
+    background-color: #f3f4f7;
+    border-radius: 60px;
+    padding: 5px;
+    color: rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+
+}
+.productItem .actions button:hover{
+    background: #511653;
+    color: white;
+
+}
+.productItem .actions button svg{
+    width: 15px;
+    height: 15px;
+}
+.productItem .imgWrapper{
+    overflow: hidden;
+}
+.productItem .imgWrapper:hover .actions{
+    opacity: 1;
+    right: 1rem;
 }
