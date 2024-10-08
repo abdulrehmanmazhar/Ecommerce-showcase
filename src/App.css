@@ -455,8 +455,6 @@ nav .navPart2 ul li a:hover{
 
 
 
-
-
 .swiper-button-next, .swiper-button-prev {
     color: #000 !important;
     width: 40px !important;
@@ -487,6 +485,7 @@ nav .navPart2 ul li a:hover{
 .newsLetter{
     background: #381239;
     height: auto ;
+    overflow: hidden;
 }
 .newsLetter .text-light{
     opacity: 0.5;
@@ -499,6 +498,7 @@ nav .navPart2 ul li a:hover{
     display: flex;
     align-items: center;
     position: relative;
+    border-radius: 4px;
 }
 .newsLetter form svg{
     font-size: 30px;
@@ -519,7 +519,57 @@ nav .navPart2 ul li a:hover{
     padding-left: 20px;
     padding-right: 20px;
     color: white;
-    background: #381239;
+    background: #511653;
     position: absolute;
     right: 0.5rem;
+}
+.topInfo .col{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+.topInfo :last-child{
+    border-right: 0px;
+}
+.topInfo .col svg{
+    font-size: 30px;
+}
+.topInfo .col p{
+    margin: auto;
+}
+.bottomTable .col ul li{
+    list-style: none;
+}
+.bottomTable .col a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.6);
+}
+.bold{
+    font-weight: 600;
+}
+.copyright ul li svg{
+    font-size: 25px;
+    color: rgba(0, 0, 0, 0.8);
+    /* color: #511653; */
+
+}
+.copyright ul :hover{
+    background-color: #511653;
+    color: white;
+}
+ .copyright ul li{
+    text-align: center;
+    width: 40px;
+    padding: 7px;
+    /* height: 40px; */
+    background: #f3f4f7;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+  
+}
+.copyright ul li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
