@@ -443,3 +443,44 @@ nav .navPart2 ul li a:hover{
     opacity: 1;
     right: 1rem;
 }
+.homeCat{
+    padding: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+.swiper-button-next, .swiper-button-prev {
+    color: #000 !important;
+    width: 40px !important;
+    height: 40px !important;
+    background: #f3f4f7;
+    padding: 15px;
+    border-radius: 50%;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Correct pseudo-element targeting */
+.swiper-button-next::after, 
+.swiper-button-prev::after {
+    font-size: 15px !important;
+    font-weight: 900 !important;
+    color: #000 !important; /* Color for the arrow icons */
+    width: 100% !important;
+    height: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+}
