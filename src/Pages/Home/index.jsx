@@ -10,6 +10,9 @@ import slideBanner1 from "../../assets/slideBanner1.jpg";
 import slideBanner2 from "../../assets/slideBanner2.jpg";
 import ProductItem from "../../Components/ProductItem";
 import HomeCategory from "../../Components/HomeCategory";
+import newLetter from '../../assets/coupon.png'
+import { IoMailOutline } from "react-icons/io5";
+
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
@@ -25,13 +28,19 @@ function Home() {
           //     ]
         }
       ></HomeBanner>
+
+
       <HomeCategory></HomeCategory>
+
+
       <section className="homeProducts">
         <div className="conatiner">
           <div className="row">
             <div className="col-md-3">
               <img className="banner cursor" src={banner1} alt="" />
               <img className="banner cursor mt-4" src={banner2} alt="" />
+              <img className="banner cursor mt-4" src={banner1} alt="" />
+
             </div>
             <div className="col-md-9">
               <div className="d-flex align-items-center">
@@ -102,6 +111,30 @@ function Home() {
                   </SwiperSlide>
                 </Swiper>
               </div>
+              <div className="w-100 pt-4 pb-4 pr-4 d-flex align-item-center">
+                <img className="w-100" src={slideBanner1} alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="newsLetter mb-3 d-flex align-items-center">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-6 d-flex justify-content-center flex-column">
+              <p className="text-white">20% discound for your first order</p>
+              <h4 className="text-white">Join our Newsletter and get...</h4>
+              <p className="text-light">Join us by your email to get updated everytime</p>
+              <form action="">
+              <IoMailOutline />
+
+                <input type="text" name="" id="" placeholder="Enter your Email..." />
+                <Button>Subscribe</Button>
+              </form>
+            </div>
+            <div className="col-md-6">
+              <img src={newLetter} alt="" />
             </div>
           </div>
         </div>
