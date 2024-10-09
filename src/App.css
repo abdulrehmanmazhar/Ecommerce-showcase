@@ -376,7 +376,7 @@ nav .navPart2 ul li a:hover{
     font-size: 16px;
     font-weight: 600;
 }
-.product_row .item .info{
+ .item .info{
     padding: 1rem;
 }
 .bannerHeading{
@@ -648,6 +648,7 @@ nav .navPart2 ul li a:hover{
 }
 .css-j204z7-MuiFormControlLabel-root svg{
     font-size: 20px;
+    color: #381239;
 }
 .productListing .sidebar .filterBox .scroll{
     max-height: 180px;
@@ -678,4 +679,32 @@ nav .navPart2 ul li a:hover{
     background-color: #381239 !important;
     position: absolute;
     top: 0px;
+}
+.contentRight .viewControls{
+    background: gainsboro;
+    /* display: inline-block; */
+    width: 100% !important;
+    padding: .5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contentRight .icons svg{
+    margin-left: 1rem;
+    font-size: 18px;
+    cursor: pointer;
+}.contentRight .products{
+    flex-wrap: wrap;
+}
+.contentRight .products .item{
+    overflow-x: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin-bottom: 1rem;
+    border-radius: 7px;
+}
+.width33{
+    width: 33%;
+}
+.width50{
+    width: 50%;
 }

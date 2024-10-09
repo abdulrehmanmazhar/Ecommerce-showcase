@@ -5,7 +5,7 @@ import { BsArrowsFullscreen } from "react-icons/bs";
 import { FaRegHeart } from "react-icons/fa";
 import ProductModal from "../ProductModal";
 import { useState } from "react";
-function ProductItem() {
+function ProductItem({classArg}) {
   const [isOpenProductModal, setisOpenProductModal] = useState(false);
   const toggle =()=>{setisOpenProductModal((prev)=>!prev);}
   const viewProductDetails = (id)=>{
@@ -15,7 +15,7 @@ function ProductItem() {
   return (
     <>
     
-    <div className="item productItem">
+    <div className={`item productItem ${classArg}`}>
       <div className="imgWrapper">
         <img
           className="w-100"
