@@ -37,7 +37,7 @@ function Listing() {
 
                 </div>
                 <div className="pagination m-5 justify-content-center">
-      <Pagination count={10} color="secondary" />
+      <Pagination count={10} />
       </div>
             </div>
           </div>
