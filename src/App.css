@@ -238,7 +238,7 @@ nav .navPart2 ul li a:hover{
 ::-webkit-scrollbar-track{
     background: transparent;
 }
-.locationModal .MuiPaper-elevation .close_{
+.locationModal .MuiPaper-elevation .close_,.productModal .MuiPaper-elevation .close_{
     position: absolute;
     top: 5px;
     right: 5px;
@@ -250,7 +250,7 @@ nav .navPart2 ul li a:hover{
     border-radius: 50%;
     padding: 0;
 }
-.locationModal .MuiPaper-elevation .close_:hover{
+.locationModal .MuiPaper-elevation .close_:hover, .productModal .MuiPaper-elevation .close_:hover{
     color: white;
     background: red;
 }
@@ -383,13 +383,13 @@ nav .navPart2 ul li a:hover{
     font-size: 20px;
     font-weight: 600;
 }
-.item .info .oldPrice{
+.oldPrice{
     font-size: 18px;
     font-weight: bold;
     color: rgba(0, 0, 0, 0.4);
     text-decoration: line-through;
 }
-.item .info .netPrice{
+.netPrice{
     font-size: 18px;
     font-weight: bold;
 }
@@ -399,7 +399,7 @@ nav .navPart2 ul li a:hover{
 .productItem{
     position: relative;
 }
-.badge{
+.productItem .badge{
     position: absolute;
     top: 1rem;
     left: 1rem;
@@ -572,4 +572,52 @@ nav .navPart2 ul li a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.productModal .MuiPaper-elevation{
+    padding: 2rem !important;
+    width: 800px;
+    max-width: 900px;
+}
+.productDetailSwiper{
+    border-radius: 7px;
+    user-select: none;
+}
+.btn-purple{
+    background: #511653 !important;
+    color: white !important;
+}
+.btn-purple-inv{
+    background: white !important;
+    color: #511653 !important;
+    border: 1px solid rgba(0, 0, 0, 0.2) !important;
+}
+.btn-round{
+    border-radius: 2rem !important;
+}
+.btn-big{
+    min-width: 150px !important;
+    padding: auto 1rem !important;
+}
+.quantityControl{
+    width: 150px;
+}
+.quantityControl button{
+    min-width: 40px  !important;
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 50%;
+    margin: auto .5rem;
+}
+.quantityControl input{
+    height: 40px;
+    max-width: 25px;
+    border: none;
+    outline: none;
+}
+.wishlist-btn{
+    border: 1px solid #511653 !important;
+    font-weight: 600 !important;
+}
+.productModal .compare svg{
+    font-size: 20px;
 }
