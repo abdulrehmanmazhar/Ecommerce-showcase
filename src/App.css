@@ -621,3 +621,61 @@ nav .navPart2 ul li a:hover{
 .productModal .compare svg{
     font-size: 20px;
 }
+.productListingPage .productListing{
+    gap: 20px;
+
+}
+.productListingPage{
+    padding: 35px 0px;
+}
+.productListingPage .productListing .sidebar{
+    width: 20%;
+    flex: 0 0 20%;
+
+}
+.productListingPage .productListing .contentRight{
+    width: 80%;
+    flex: 0 0 80%;
+}
+.productListing .sidebar .filterBox h6{
+    font-weight: 600;
+    
+}
+.sidebar .filterBox ul li{
+    list-style: none;
+    margin: 0px !important;
+
+}
+.css-j204z7-MuiFormControlLabel-root svg{
+    font-size: 20px;
+}
+.productListing .sidebar .filterBox .scroll{
+    max-height: 180px;
+    overflow-y: scroll;
+}
+/* .priceFilter{
+    margin-top: 1rem;
+} */
+.priceFilter .horizontal-slider{
+    padding: 2.5px 0px;
+    background-color: gainsboro;
+    position: relative;
+}
+.priceFilter .horizontal-slider .example-thumb{
+    background-color: #381239;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    outline: none;
+    /* margin-top: 7px; */
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    transform: translateY(-25%);
+}
+.priceFilter .horizontal-slider .example-track-1{
+    padding: 2.5px 0;
+    background-color: #381239 !important;
+    position: absolute;
+    top: 0px;
+}
