@@ -6,6 +6,7 @@ import { FaGripVertical } from "react-icons/fa";
 import { useState } from 'react';
 import Button from "@mui/material/Button";
 import ProductItem from '../../Components/ProductItem';
+import Pagination from '@mui/material/Pagination';
 function Listing() {
   const [classArg, setClassArg] = useState('');
   return (
@@ -35,10 +36,14 @@ function Listing() {
                   <ProductItem classArg={classArg}></ProductItem>
 
                 </div>
+                <div className="pagination m-5 justify-content-center">
+      <Pagination count={10} color="secondary" />
+      </div>
             </div>
           </div>
         </div>
       </div>
+      
     </section>
   )
 }
