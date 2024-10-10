@@ -9,9 +9,10 @@ import Tooltip from "@mui/material/Tooltip";
 import { FaRegHeart } from "react-icons/fa";
 import { MdCompareArrows } from "react-icons/md";
 import IconButton from "@mui/material/IconButton";
-
+import ProductItem from "../../Components/ProductItem";
 function ProductDetail() {
   const [ID, setID] = useState(1);
+  const [tab, setTab] = useState(1);
   return (
     <section className="productDetail section">
       <div className="container">
@@ -195,8 +196,129 @@ function ProductDetail() {
           </div>
         </div>
         <div className="row">
-          <div className="part2"></div>
-
+          <div className="part2">
+            <div className="tabButtons w-100 p-3 d-flex justify-content-around">
+              <Button onClick={() => setTab(1)}>Description</Button>
+              <Button onClick={() => setTab(2)}>Additional Info</Button>
+              <Button onClick={() => setTab(3)}>Review (3)</Button>
+            </div>
+            <div className="content">
+              {tab === 1 && (
+                <p className="p-3">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Iusto, veritatis esse molestiae, sequi soluta eos aliquam
+                  laborum ipsa illum laudantium maxime, dolore nam! Culpa,
+                  laboriosam amet. Deserunt aut optio quae voluptate natus at!
+                  Ullam, excepturi. Omnis vel animi fuga voluptatem.
+                </p>
+              )}
+              {tab === 2 && (
+                <p className="p-3">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Blanditiis maxime voluptatibus est, ullam unde earum numquam
+                  culpa quas eum laboriosam ipsam illum harum quibusdam, dolores
+                  quod nihil mollitia maiores voluptates dignissimos libero! Ex
+                  quod error praesentium repellat. Asperiores minima obcaecati,
+                  quos quo facere voluptatem eius voluptate quaerat dolorem
+                  deleniti perferendis voluptatum tenetur sed aperiam dolorum
+                  enim unde explicabo modi eos reprehenderit dolores. Accusamus
+                  vel enim sint recusandae neque amet? Dolorem?
+                </p>
+              )}
+              {tab === 3 && (
+                <p className="p-3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+                  hic voluptates eveniet asperiores repellat quam amet quo
+                  officia, aperiam esse, ipsam suscipit ipsum culpa harum. Vitae
+                  aut aspernatur cum magnam tempore quasi veniam maiores optio
+                  vero accusantium necessitatibus nesciunt inventore libero rem,
+                  omnis quia at, odio dolores illum, culpa repellendus
+                  perferendis id facilis? Velit possimus quos iusto ipsum
+                  tempore recusandae error maiores molestiae veritatis alias hic
+                  necessitatibus rerum doloremque suscipit nostrum aliquam optio
+                  doloribus nobis voluptatem, eos temporibus deleniti culpa!
+                  Laborum laboriosam recusandae vero perferendis blanditiis
+                  magnam dicta debitis dolorem?
+                </p>
+              )}
+            </div>
+          </div>
+            <div className="productDetailCarousel w-100 pr-4 mt-5">
+            <h3 className="bannerHeading">MOST RECENTLY</h3>
+            <Swiper
+                  slidesPerView={4}
+                  spaceBetween={8}
+                  navigation={true}
+                  slidesPerGroup={1}
+                  modules={[Navigation]}
+                  className="mySwiper"
+                >
+                  <SwiperSlide>
+                    <ProductItem></ProductItem>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <ProductItem></ProductItem>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <ProductItem></ProductItem>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <ProductItem></ProductItem>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <ProductItem></ProductItem>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <ProductItem></ProductItem>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <ProductItem></ProductItem>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <ProductItem></ProductItem>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <ProductItem></ProductItem>
+                  </SwiperSlide>
+                </Swiper>
+                <h3 className="bannerHeading mt-5">RELATED PRODUCTS</h3>
+            <Swiper
+                  slidesPerView={4}
+                  spaceBetween={8}
+                  navigation={true}
+                  slidesPerGroup={1}
+                  modules={[Navigation]}
+                  className="mySwiper"
+                >
+                  <SwiperSlide>
+                    <ProductItem></ProductItem>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <ProductItem></ProductItem>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <ProductItem></ProductItem>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <ProductItem></ProductItem>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <ProductItem></ProductItem>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <ProductItem></ProductItem>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <ProductItem></ProductItem>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <ProductItem></ProductItem>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <ProductItem></ProductItem>
+                  </SwiperSlide>
+                </Swiper>
+            </div>
         </div>
       </div>
     </section>

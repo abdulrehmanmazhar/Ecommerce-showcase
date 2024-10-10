@@ -57,7 +57,7 @@ function Home() {
               <div className="product_row w-100">
                 <Swiper
                   slidesPerView={3}
-                  spaceBetween={0}
+                  spaceBetween={8}
                   navigation={true}
                   slidesPerGroup={1}
                   modules={[Navigation]}
@@ -91,7 +91,7 @@ function Home() {
               <div className="product_row w-100">
                 <Swiper
                   slidesPerView={3}
-                  spaceBetween={0}
+                  spaceBetween={8}
                   navigation={true}
                   slidesPerGroup={1}
                   modules={[Navigation]}

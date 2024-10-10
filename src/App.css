@@ -398,6 +398,8 @@ nav .navPart2 ul li a:hover{
 }
 .productItem{
     position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
 }
 .productItem .badge{
     position: absolute;
@@ -439,6 +441,7 @@ nav .navPart2 ul li a:hover{
 }
 .productItem .imgWrapper{
     overflow: hidden;
+    border-radius: 8px;
 }
 .productItem .imgWrapper:hover .actions{
     opacity: 1;
@@ -750,7 +753,17 @@ nav .navPart2 ul li a:hover{
 .productDetail .part2{
     margin: 1rem;
     width: 100%;
-    min-height: 50vh;
+    /* min-height: 50vh; */
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: .5rem;
+}
+.productDetail .part2 button{
+    width: 150px;
+    border-radius: 2rem;
+    background-color: #f3f4f7;
+    color: #381239;
+    font-weight: 600;
+}
+.productDetailCarousel{
+    margin: 1rem;
 }
