@@ -5,9 +5,13 @@ import { BsArrowsFullscreen } from "react-icons/bs";
 import { FaRegHeart } from "react-icons/fa";
 import ProductModal from "../ProductModal";
 import { useState } from "react";
+import { useContext } from "react";
+import ModalContext from "../../Contexts/ProductModalToggle/ModalContext";
 function ProductItem({classArg}) {
-  const [isOpenProductModal, setisOpenProductModal] = useState(false);
-  const toggle =()=>{setisOpenProductModal((prev)=>!prev);}
+  // const [isOpenProductModal, setisOpenProductModal] = useState(false);
+  // const toggle =()=>{setisOpenProductModal((prev)=>!prev);}
+  const {toggle} = useContext(ModalContext);
+  console.log(toggle)
   const viewProductDetails = (id)=>{
     toggle()
     // console.log(isOpenProductModal)
@@ -49,10 +53,6 @@ function ProductItem({classArg}) {
         </div>
       </div>
     </div>
-    {isOpenProductModal&&
-
-      <ProductModal toggle={toggle}></ProductModal>
-    }
     </>
   );
 }

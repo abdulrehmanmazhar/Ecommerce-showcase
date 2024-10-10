@@ -1,26 +1,35 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
-import CountryContextProvider from './Contexts/Countries/CountryContextProvider';
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import Home from './Pages/Home';
 import Header from './Components/Header'
 import Footer from './Components/Footer'
 import Listing from './Pages/Listing';
+import ProductDetail from './Pages/ProductDetail';
+import ModalContext from './Contexts/ProductModalToggle/ModalContext';
+import { useContext } from 'react';
+import ProductModal from './Components/ProductModal';
 function App() {
-
+  const {isOpenProductModal, toggle} = useContext(ModalContext);
   return (
-
-    <CountryContextProvider>
+    <>
+    
     <BrowserRouter>
     <Header/>
     <Routes>
       <Route path='/' element={<Home/>}/>
       <Route path='/cat/:id' element={<Listing/>}/>
+      <Route path='/product/:id' element={<ProductDetail/>}/>
     </Routes>
     <Footer/>
     </BrowserRouter>
-    </CountryContextProvider>
+    
 
+{isOpenProductModal&&
+
+  <ProductModal toggle={toggle}></ProductModal>
+}
+</>
   )
 }
 
