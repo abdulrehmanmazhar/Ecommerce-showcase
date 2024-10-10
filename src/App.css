@@ -411,11 +411,10 @@ nav .navPart2 ul li a:hover{
 .productItem .actions{
     position: absolute;
     top: 1rem;
-    /* right: -100%; */
     opacity: 0;
     visibility: none;
     width: 40px;
-    transition: all 0.3s ease-in-out;
+    /* transition: all 0.3s ease-in-out; */
 }
 .productItem .actions button{
     min-width: 30px;
@@ -712,4 +711,46 @@ nav .navPart2 ul li a:hover{
 }
 .section{
     padding: 45px 0;
+}
+.text-light{
+    color: rgba(0, 0, 0, 0.6) !important;
+}
+.productDetail .big .oldPrice{
+   font-size: 18px; 
+}
+.productDetail .big .netPrice{
+    font-size: 22px;
+}
+.productDetail .badge-success{
+    padding: .25rem .5rem;
+    border-radius: 1rem;
+}
+.productDetail .about{
+    color: rgba(0, 0, 0, 0.6);
+}
+.productDetail .all{
+    padding: .25rem .5rem !important;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 2rem;
+    user-select: none;
+    cursor: pointer;
+}
+.productDetail .active{
+    background: #381239;
+    color: white;
+
+}
+.tooltip{
+    opacity: 1;
+    border: 1px solid rgba(0, 0, 0, 0.2) !important;
+}
+.tooltip svg{
+    font-size: 20px;
+}
+.productDetail .part2{
+    margin: 1rem;
+    width: 100%;
+    min-height: 50vh;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: .5rem;
 }
