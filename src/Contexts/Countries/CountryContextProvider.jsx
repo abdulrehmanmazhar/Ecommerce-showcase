@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import CountryContext from './CountryContext.js'
 import axios from 'axios';
 function CountryContextProvider({children}) {
-    let [countries,setCountries] = React.useState(['india','pakistan','bangladesh'])
+    let [countries,setCountries] = React.useState([])
     let getCountry=async(url)=>{
       try {
         const response = (await axios.get(url));

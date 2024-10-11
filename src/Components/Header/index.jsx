@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import logo from "../../assets/logo.png";
 
 import Button from "@mui/material/Button";
@@ -11,7 +11,9 @@ import { FaAngleRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import CountryDropdown from "../CountryDropdown";
 import SearchBox from "../SearchBox";
+import UserContext from "../../Contexts/UserContext/UserContext";
 function Header() {
+  const {login, setUserModal} = useContext(UserContext);
   return (
     <>
       <div className="headerWrapper">
@@ -40,11 +42,13 @@ function Header() {
                 <SearchBox />
                 {/* header searchbar ending */}
                 <div className="part3 d-flex align-items-center ml-auto">
+                  {login?
                   <Button className="circle mr-3">
                     <LuUser2 />
                   </Button>
+                  : <Button className="signin-btn btn-purple" onClick={()=>setUserModal(true)}>SIGN IN</Button>}
                   <div className="ml-auto cartTab d-flex align-items-center">
-                    <span className="price">$3.29</span>
+                    <span className="price ml-3">$3.29</span>
                     <div className="position-relative ml-2">
                       <Button className="circle">
                         <IoBagOutline />

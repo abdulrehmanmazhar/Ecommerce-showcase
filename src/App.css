@@ -798,6 +798,7 @@ nav .navPart2 ul li a:hover{
 .signinModal{
     /* margin-right: 2rem; */
     width: 300px;
+    height: max-content !important;
 }
 .MuiDialog-container .signinModal .logo-div{
     margin: 0;
@@ -806,4 +807,11 @@ nav .navPart2 ul li a:hover{
 }
 .MuiDialog-container .signinModal .logo-div img{
     width: 100%;
+}
+.MuiPaper-elevation .signModal{
+    max-height: 600px;
+}
+.pointer{
+    cursor: pointer;
+    color: #381239;
 }

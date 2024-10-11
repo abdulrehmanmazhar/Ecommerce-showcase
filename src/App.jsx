@@ -10,10 +10,11 @@ import ModalContext from './Contexts/ProductModalToggle/ModalContext';
 import { useContext, useState } from 'react';
 import ProductModal from './Components/ProductModal';
 import Cart from './Pages/Cart';
+import UserContext from './Contexts/UserContext/UserContext';
 import SignIn from './Pages/SignIn';
 function App() {
   const {isOpenProductModal, toggle} = useContext(ModalContext);
-  const [signinModal,setSigninModal] = useState(false)
+  const {userModal} = useContext(UserContext)
   return (
     <>
     
@@ -34,7 +35,7 @@ function App() {
   <ProductModal toggle={toggle}></ProductModal>
 }
 {
-  signinModal&& <SignIn></SignIn>
+  userModal&& <SignIn></SignIn>
 }
 </>
   )
