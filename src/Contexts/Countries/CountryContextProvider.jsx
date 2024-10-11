@@ -5,8 +5,13 @@ function CountryContextProvider({children}) {
     let [countries,setCountries] = React.useState(['india','pakistan','bangladesh'])
     let getCountry=async(url)=>{
       try {
-        const response = await axios.get(url)
-        setCountries(response.data.data)
+        const response = (await axios.get(url));
+        if (response.status== 200) {
+          
+          setCountries(response.data.data)
+        }
+        
+        // console.log(response)
       } catch (error) {
         console.log(error)
       }

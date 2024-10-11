@@ -7,11 +7,13 @@ import Footer from './Components/Footer'
 import Listing from './Pages/Listing';
 import ProductDetail from './Pages/ProductDetail';
 import ModalContext from './Contexts/ProductModalToggle/ModalContext';
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import ProductModal from './Components/ProductModal';
 import Cart from './Pages/Cart';
+import SignIn from './Pages/SignIn';
 function App() {
   const {isOpenProductModal, toggle} = useContext(ModalContext);
+  const [signinModal,setSigninModal] = useState(false)
   return (
     <>
     
@@ -30,6 +32,9 @@ function App() {
 {isOpenProductModal&&
 
   <ProductModal toggle={toggle}></ProductModal>
+}
+{
+  signinModal&& <SignIn></SignIn>
 }
 </>
   )
