@@ -4,7 +4,7 @@ import { FaMinus } from "react-icons/fa";
 import Button from "@mui/material/Button";
 
 function QuantityBox() {
-    const [inputVal, setInputVal] = useState(4);
+    const [inputVal, setInputVal] = useState(1);
     const minus = ()=>{
         setInputVal(prev=>prev>1?prev-1:prev)
         console.log(inputVal)

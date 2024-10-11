@@ -9,6 +9,7 @@ import ProductDetail from './Pages/ProductDetail';
 import ModalContext from './Contexts/ProductModalToggle/ModalContext';
 import { useContext } from 'react';
 import ProductModal from './Components/ProductModal';
+import Cart from './Pages/Cart';
 function App() {
   const {isOpenProductModal, toggle} = useContext(ModalContext);
   return (
@@ -20,6 +21,7 @@ function App() {
       <Route path='/' element={<Home/>}/>
       <Route path='/cat/:id' element={<Listing/>}/>
       <Route path='/product/:id' element={<ProductDetail/>}/>
+      <Route path='/cart' element={<Cart/>}/>
     </Routes>
     <Footer/>
     </BrowserRouter>

@@ -767,3 +767,31 @@ nav .navPart2 ul li a:hover{
 .productDetailCarousel{
     margin: 1rem;
 }
+.hd{
+    font-size: 20px;
+    font-weight: 600;
+}
+.cart table thead{
+    background-color: #f3f4f7;
+}
+.cartItemimgWrapper{
+    width: 300px;
+}
+.cartItemimgWrapper .imgWrapper{
+    width: 100px;
+    overflow: hidden;
+}
+.cart tbody a{
+    color: #000;
+    text-decoration: none;
+}
+.cart .quantityBox input{
+    width: 40px;
+}
+.cart tbody tr :last-child svg{
+    font-size: 20px;
+    cursor: pointer;
+}
+.cartDetails hr{
+    padding: 0%;
+}
