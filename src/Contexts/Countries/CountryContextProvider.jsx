@@ -6,10 +6,9 @@ function CountryContextProvider({children}) {
     let getCountry=async(url)=>{
       try {
         const response = (await axios.get(url));
-        if (response.status== 200) {
+  
           
           setCountries(response.data.data)
-        }
         
         // console.log(response)
       } catch (error) {
