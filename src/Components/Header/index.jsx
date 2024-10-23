@@ -46,7 +46,7 @@ function Header() {
                   <Button className="circle mr-3">
                     <LuUser2 />
                   </Button>
-                  : <Button className="signin-btn btn-purple" onClick={()=>setUserModal(true)}>SIGN IN</Button>}
+                  : <Button className="btn-purple signin-btn " onClick={()=>setUserModal(true)}>SIGN IN</Button>}
                   <div className="ml-auto cartTab d-flex align-items-center">
                     <span className="price ml-3">$3.29</span>
                     <div className="position-relative ml-2">
